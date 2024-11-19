@@ -6,7 +6,7 @@ package proiectjava.dealershippoo;
 import java.util.ArrayList;
 /**
  *
- * @author Daria
+ * @Author hcosm
  */
 public class LandVehicles extends Vehicle{
     String type;
