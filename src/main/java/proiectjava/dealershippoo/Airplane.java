@@ -3,6 +3,6 @@
 package proiectjava.dealershippoo;
 //eu lucrez aici in local si dupa cum fac?
 //
-public class Airplane {
+public class Airplane extends AirVehicles {
     
 }
