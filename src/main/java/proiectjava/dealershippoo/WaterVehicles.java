@@ -6,5 +6,5 @@ package proiectjava.dealershippoo;
 
 
 public class WaterVehicles extends Vehicle {
-    
+    //modificare
 }
