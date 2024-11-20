@@ -12,7 +12,7 @@ package proiectjava.dealershippoo;
 import javax.swing.ImageIcon;
 import java.awt.Color;
 
-public class Yacht {
+public class Yacht extends WaterVehicles{
     int id;
     String brand;
     String model;
