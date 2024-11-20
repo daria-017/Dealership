@@ -1,12 +1,18 @@
-//JetPlane, Airplane, Helicopter
-//Vehicle, Customer, VehicleShop
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package proiectjava.dealershippoo;
-//
+
+/**
+ *
+ * @author Daria
+ */
 
 import java.awt.Color;
 import javax.swing.ImageIcon;
 
-public class Airplane extends AirVehicles {
+public class Helicopter extends AirVehicles {
     int id;
     String brand;
     String model;
@@ -19,10 +25,10 @@ public class Airplane extends AirVehicles {
     Transmission transmission;
     ImageIcon photo;
     
-    Airplane(){
+    Helicopter(){
         id=0;
-        brand="Marca avion necunoscuta";
-        model="Model avion necunoscut";
+        brand="Marca de elicopter necunoscuta";
+        model="Model de elicopter necunoscut";
         year=0;
         color=null;
         price=0;
@@ -32,7 +38,7 @@ public class Airplane extends AirVehicles {
         transmission=new Transmission();
         photo=new ImageIcon();
     }
-    Airplane(int id, String brand, String model, int year, Color color, double price, short weight, int engineCycles, Engine engine,Transmission transmission, ImageIcon photo){
+    Helicopter(int id, String brand, String model, int year, Color color, double price, short weight, int engineCycles, Engine engine,Transmission transmission, ImageIcon photo){
         this.id=id;
         this.brand=brand;
         this.model=model;
@@ -47,22 +53,22 @@ public class Airplane extends AirVehicles {
         
     }
     
-    Airplane(Airplane airplane){
-        this.id=airplane.id;
-        this.brand=airplane.brand;
-        this.model=airplane.model;
-        this.year=airplane.year;
-        this.color=airplane.color;
-        this.price=airplane.price;
-        this.weight=airplane.weight;
-        this.engineCycles=airplane.engineCycles;
-        this.engine=new Engine(airplane.engine);
-        this.transmission=new Transmission(airplane.transmission);
-        this.photo=airplane.photo;
+    Helicopter(Helicopter helicopter){
+        this.id=helicopter.id;
+        this.brand=helicopter.brand;
+        this.model=helicopter.model;
+        this.year=helicopter.year;
+        this.color=helicopter.color;
+        this.price=helicopter.price;
+        this.weight=helicopter.weight;
+        this.engineCycles=helicopter.engineCycles;
+        this.engine=new Engine(helicopter.engine);
+        this.transmission=new Transmission(helicopter.transmission);
+        this.photo=helicopter.photo;
         
     }
     public String toString(){
-        return "Avion\nId: "+id+" Brand: "+" Model: "+model+" An de fabricatie: "+year+" Culoare: "+color+" Pret: "+price+" Greutate(in tone): "+weight+" Cicluri de motor: "+engineCycles+" Motor: "+engine+" Detalii de Transmisie: "+transmission+" Poza: "+(photo!=null? " Imagine Disponibila":" Nu exista imagine");
+        return "Elicopter\nId: "+id+" Brand: "+" Model: "+model+" An de fabricatie: "+year+" Culoare: "+color+" Pret: "+price+" Greutate(in tone): "+weight+" Cicluri de motor: "+engineCycles+" Motor: "+engine+" Detalii de Transmisie: "+transmission+" Poza: "+(photo!=null? " Imagine Disponibila":" Nu exista imagine");
     }
     public int getId() { 
         return id; 
@@ -143,5 +149,5 @@ public class Airplane extends AirVehicles {
     public Transmission getTransmission(Transmission transmission) {
         this.transmission = transmission;
     }   
-    
+        
 }
