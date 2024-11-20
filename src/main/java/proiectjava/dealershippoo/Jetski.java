@@ -9,7 +9,7 @@ package proiectjava.dealershippoo;
 import javax.swing.ImageIcon;
 import java.awt.Color;
 
-public class Jetski {
+public class Jetski extends WaterVehicles{
     int id;
     String brand;
     String model;
